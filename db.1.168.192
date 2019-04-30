@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+;
+
+$TTL	604800
+@	IN	SOA	dns.practicadaw.net. joseluisalonso@email.com (
+			 2019043001	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+@	IN	NS	dns.practicadaw.net.
+100	IN	PTR	pc1.practicadaw.net.
+101	IN	PTR	pc2.practicadaw.net.
+102	IN	PTR	pc3.practicadaw.net.
+200	IN	PTR	correos.practicadaw.net.
+
